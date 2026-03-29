@@ -1,0 +1,197 @@
+/* Responsive Styles */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    width: auto;
+    max-width: 100%;
+  }
+  #root {
+    width: auto;
+    max-width: 100%;
+  }
+  .barber-img {
+    width: 100%;
+  }
+  .steps {
+    position: absolute;
+    bottom: 300px;
+    left: 150px;
+  }
+  .step-item.active p {
+    font-size: 25px;
+  }
+  .step-item p {
+    font-size: 25px;
+  }
+  .circle {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
+  }
+  .stepper .line {
+    width: 195px;
+  }
+  .dt-container .dt-wrapper {
+    flex-direction: row;
+  }
+   .main-container .right-panel {
+        min-height: auto;
+    }
+      .left-panel {
+    order: 2; /* move below */
+  }
+
+  .right-panel {
+    order: 1;
+  }
+}
+@media (min-width: 991px) {
+  /* .content {
+    width: 1170px;
+    margin: 0 auto;
+  } */
+  .header {
+    width: 1170px;
+    margin: 0 auto;
+  }
+}
+/* MOBILE 🔥 */
+@media (max-width: 768px) {
+  body {
+    width: auto;
+    max-width: 100%;
+  }
+  #root {
+    width: auto;
+    max-width: 100%;
+  }
+  .content {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: auto;
+  }
+
+  .left-panel {
+    order: 2; /* move below */
+  }
+
+  .right-panel {
+    order: 1;
+  }
+  /* CONTAINER */
+  .dt-container {
+    padding: 10px 0;
+  }
+
+  /* TITLE */
+  .dt-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  /* WRAPPER */
+  .dt-wrapper {
+    display: flex;
+    gap: 25px;
+  }
+
+  /* CALENDAR */
+  .dt-calendar {
+    background: #fff;
+    border-radius: 14px;
+    padding: 0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  }
+
+  /* TIME */
+  .dt-time {
+    flex: 1;
+  }
+
+  /* DATE TEXT */
+  .dt-date {
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #444;
+  }
+
+  /* BUTTON */
+  .dt-time-btn {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background: #fafafa;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+  }
+
+  /* HOVER */
+  .dt-time-btn:hover {
+    border-color: #ff4d6d;
+    background: #fff;
+  }
+
+  /* ACTIVE */
+  .dt-time-btn.active {
+    background: #ff4d6d;
+    color: white;
+    border: none;
+  }
+
+  .dt-wrapper {
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 25px;
+  }
+  .line {
+    width: 65px;
+  }
+  .footer-algn {
+    display: grid;
+    justify-content: center;
+  }
+  .form-group input {
+    width: 100%;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .right-panel {
+    min-height: 70vh;
+  }
+  .menu-toggle {
+    display: block;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    background: #fff;
+    flex-direction: column;
+    width: 250px;
+    display: none;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  .nav a {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .book-btn {
+    display: none; /* optional */
+  }
+}
